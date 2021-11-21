@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen> 
+  <ion-card>
+    <img src="assets/image/user.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Profile</ion-card-subtitle>
+      <ion-card-title>Angelica Estrada</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     Username: ange123@gmail.com<br>
+     Birthday: January 25, 2001
+    </ion-card-content>
+  </ion-card>
+  <div class="center">
+  <ion-button [routerLink]="['/home']" color="warning">Back to Home</ion-button>
+  </div>
+</ion-content>

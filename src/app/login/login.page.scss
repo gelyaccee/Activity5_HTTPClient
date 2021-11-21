@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ion-list{
+    background-color: transparent;
+}
+    ion-input {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+    height: 46px;
+    padding: 0 20px 0 23px;
+}
+
+
+.center {
+    margin-left: 35%;
+    margin-right: 10%;
+    background-color: none;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+.back-blob {
+    z-index: -1;
+    width: 480px;
+    position: absolute;
+    left: -50%;
+    top: 1px;
+}
+
+
+  

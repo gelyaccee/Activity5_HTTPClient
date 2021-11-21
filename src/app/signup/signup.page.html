@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="profileForm" (ngSubmit)="signup()">
+    <ion-list> 
+      <ion-item>
+          <ion-label position="floating">Firstname</ion-label>
+          <ion-input type="text" formControlName="firstName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Lastname</ion-label>
+        <ion-input type="text" formControlName="lastName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" formControlName="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" formControlName="password"></ion-input>
+</ion-item>
+</ion-list>
+
+    <ion-list formGroupName="address">
+      <ion-list-header>Address</ion-list-header>
+      <ion-item>
+          <ion-label position="floating">Street</ion-label>
+          <ion-input type="text" formControlName="street"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">City</ion-label>
+        <ion-input type="text" formControlName="city"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Province</ion-label>
+      <ion-input type="text" formControlName="province"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Zip Code</ion-label>
+    <ion-input type="text" formControlName="zip"></ion-input>
+</ion-item>
+  </ion-list>
+    
+ 
+  <div class="center">
+    <ion-button type="submit" [routerLink]="['/login']" color="warning">Submit</ion-button>
+  </div>
+ 
+  </form>
+
+ 
+</ion-content>
